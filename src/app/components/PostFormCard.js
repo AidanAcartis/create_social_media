@@ -1,17 +1,16 @@
 import Card from "./Cards.js";
+import Avatar from "./Avatar.js"
 
 export default function PostFormCard() {
     return (
         <Card>
             <div className="flex gap-1">
                 <div>
-                    <div className="w-12 rounded-full overflow-hidden">
-                        <img src="https://static.miraheze.org/allthetropeswiki/0/0b/Girls_und_Panzer_-_Nekonyaa.png" alt="avatar"/>
-                    </div>
+                    <Avatar />
                 </div>
-                <textarea className="grow p-3" placeholder={'whats on your mind, Nekota?'}/>
+                <textarea className="grow p-3 h-14" placeholder={'whats on your mind, Nekota?'}/>
             </div>
-            <div className="flex gap-3">
+            <div className="flex gap-5 mt-2 items-center">
                     <div>
                         <button className="flex gap-2">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -37,8 +36,8 @@ export default function PostFormCard() {
 
                             Mood</button>
                     </div>
-                    <div>
-                        <button className="bg-socialBlue text-white px-6 py-2 rounded-md">Share</button>
+                    <div className="grow text-right">
+                        <button className="bg-socialBlue text-white px-6 py-1 rounded-md">Share</button>
                     </div>
             </div>
         </Card>
